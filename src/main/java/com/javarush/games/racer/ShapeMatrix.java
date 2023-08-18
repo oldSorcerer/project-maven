@@ -1,6 +1,7 @@
 package com.javarush.games.racer;
 
 public class ShapeMatrix {
+
     public static final int[][] PLAYER = new int[][]{
             {0, 0, 123, 123, 0, 0},
             {1, 0, 123, 123, 0, 1},

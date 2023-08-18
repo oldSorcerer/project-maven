@@ -3,6 +3,7 @@ package com.javarush.games.racer.road;
 import java.util.List;
 
 public class MovingCar extends RoadObject {
+
     private int dx = 0;
 
     public MovingCar(int x, int y) {

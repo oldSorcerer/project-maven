@@ -13,7 +13,7 @@ public class RoadManager {
     private static final int FIRST_LANE_POSITION = 16;
     private static final int FOURTH_LANE_POSITION = 44;
     private static final int PLAYER_CAR_DISTANCE = 12;
-    private List<RoadObject> items = new ArrayList<>();
+    private final List<RoadObject> items = new ArrayList<>();
     private int passedCarsCount = 0;
 
     public int getPassedCarsCount() {

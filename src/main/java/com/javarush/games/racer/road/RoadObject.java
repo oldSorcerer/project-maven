@@ -35,20 +35,14 @@ public class RoadObject extends GameObject {
     }
 
     private static int[][] getMatrix(RoadObjectType type) {
-        switch (type) {
-            case CAR:
-                return ShapeMatrix.PASSENGER_CAR;
-            case BUS:
-                return ShapeMatrix.BUS;
-            case SPORT_CAR:
-                return ShapeMatrix.SPORT_CAR;
-            case THORN:
-                return ShapeMatrix.THORN;
-            case DRUNK_CAR:
-                return ShapeMatrix.DRUNK_CAR;
-            default:
-                return ShapeMatrix.TRUCK;
-        }
+        return switch (type) {
+            case CAR -> ShapeMatrix.PASSENGER_CAR;
+            case BUS -> ShapeMatrix.BUS;
+            case SPORT_CAR -> ShapeMatrix.SPORT_CAR;
+            case THORN -> ShapeMatrix.THORN;
+            case DRUNK_CAR -> ShapeMatrix.DRUNK_CAR;
+            default -> ShapeMatrix.TRUCK;
+        };
     }
 
     public static int getHeight(RoadObjectType type) {

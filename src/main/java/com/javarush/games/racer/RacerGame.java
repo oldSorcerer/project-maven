@@ -4,6 +4,7 @@ import com.javarush.engine.cell.*;
 import com.javarush.games.racer.road.RoadManager;
 
 public class RacerGame extends Game {
+
     public static final int WIDTH = 64;
     public static final int HEIGHT = 64;
     public static final int CENTER_X = WIDTH / 2;

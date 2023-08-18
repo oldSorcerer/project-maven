@@ -4,6 +4,7 @@ import com.javarush.engine.cell.*;
 import org.apache.commons.lang3.tuple.Pair;
 
 public class GameObject {
+
     public int x;
     public int y;
     public int width;
