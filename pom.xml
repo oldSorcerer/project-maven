@@ -86,6 +86,14 @@
                 <configuration>
                     <outputDirectory>${project.build.directory}/dependency</outputDirectory>
                 </configuration>
+                <executions>
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
             <plugin>
