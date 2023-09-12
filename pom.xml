@@ -85,6 +85,7 @@
                 <version>3.3.0</version>
                 <configuration>
                     <outputDirectory>${project.build.directory}/dependency</outputDirectory>
+                    <includeScope>compile</includeScope>
                 </configuration>
                 <executions>
                     <execution>
